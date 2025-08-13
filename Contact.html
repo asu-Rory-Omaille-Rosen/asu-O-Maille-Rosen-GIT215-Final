@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+                <h1>Wii Sports Resort</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="Contact">
+            <div id="contactOne">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns.<br> We are happy to help you plan your dream vacation with us!<br>
+                Required fields marked with a *
+                </p>
+                <img src="images/swiss-peak.jpg" alt="" width="350px" height="450px">
+
+            </div>
+            <div id="contactTwo">
+                <p>* indicates a required field</p>
+                <form >
+                    <label for="fullName"> Full Name *</label> 
+                        <input type="text" id="fullName" name="fullName" required> 
+                    
+                        <label for="email">Email*</label>
+                    <input type="text" id="email" name="email" required>
+
+                    <label for="phoneNumber">Phone Number*</label>
+                    <input type="number" id="phoneNumber" name="phoneNumber" required>
+
+                    <label for="preffered">Preferred Method of Contact*</label required>
+                    
+                    <input type="radio" id="phoneOp" name="phoneOp">
+                    <label for="phoneOp">Phone</label>
+                    
+                    <input type="radio" id="emailOp" name="emailOp">
+                    <label for="emailOp">Email</label>
+
+                    <label for="comments">Comments*</label>
+                    <textarea id="comments" rows="4" cols="50"> </textarea required>
+
+                    <input type="submit" value="submit">
+
+
+
+                
+                </form>
+            </div>
+
+            </div>
+       
+    </main>
+     <footer id="contactfooter">
+        <p>Copyright ©2023 - Wii Sports Resort </p>
+    </footer>
+</body>
+</html>
+
