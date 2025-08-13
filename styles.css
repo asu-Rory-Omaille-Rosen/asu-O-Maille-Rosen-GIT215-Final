@@ -1,326 +1,40 @@
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-:root{
-    --fonts: "Nata Sans", "Roboto", "sans serif";
-    --med-blue: #7B9A9F;
-    --liteBlue: #FAFAF7;
-    --charcoal: #363835;
-    --navy: #18232B;
-    --red: #C43E3C;
-
-
-
-}
-
-body{
-    font-size: 16px;
-    font-family: var(--fonts);
-    background-color: var(--med-blue);
-    width: 1440px;
-}
-
-
-/* header styles */
-header{
-background-image: url(images/swiss-valley.jpg);
-width: 1440px;
-height: 560px;
-margin: auto;
-display: grid;
-grid-template-rows: 30% 70%;
-}
-h1{
-    font-size: 4rem;
-    text-align: center;
-    padding-top: 10px;
-}
-nav{
-   text-align: center;
-   gap: 10px;
-    
-
-}
-
-a:hover{
-    color: var(--red);
-}
-
-h2{
-font-size: 3rem;
-text-align: center;
-}
-
-nav li {
-    font-size: 2rem;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-
-
-}
-
-nav a{
-    text-decoration: none;
-    color: black;
-    padding: 0 2rem;
-}
-
-
-/* main styles */
-
-  
-#openingSection{
-
-    margin: auto;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}  
-
-
-
-#openingSection p{
-   padding: 10px;
-   text-align: center;
-   
-}  
-    
-h2{
-font-size: 3rem;
-text-align: center;
-}
-
-h3{
-    text-align:center ;
-    font-size: 2rem;
-}
-
-
-/* content group 1 */
-#section2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 1440px;
-    margin: auto;
-     
-   
-
-}
-
-#groupOne{
-    margin: auto;
-
-}
-
-
-
-
-#groupOne p{
-    text-align: center;
-    font-size:1.2rem;
-    margin-bottom: 20px;
-
-}
-#groupOne img{
-    display: flex;
-    align-items: center;
-    margin: auto;
-
-    
-  
-    
-
-}
-/* content group 2 */
-#groupTwo{
-    margin: auto;
-}
-
-
-#groupTwo p{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size:1.2rem;
-
-}
-#groupTwo img{
-    display: flex;
-    align-items: center;
-    margin: auto;
-    
-}
-
-
-#contact{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1440px;
-    
-    
-
-
-}
-
-#contactOne{
-    display: grid;
-    grid-template-rows: 20% 20% 40% ;
-    margin: 0;
-    width: 770px;
-    
-}
-
-#contactOne img{
-    display: flex;
-    margin: auto;
-    justify-content: right;
-    position: relative;
-    left: 100px;
-    
-
-}
-
-
-#contactOne p{
-    display: flex;
-    margin: auto;
-    margin-right: 0;
-    width: 720px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: 50px;
-}
-#contactOne h2{
-
-   
-     display: flex;
-    margin: auto;
-    margin-right: 0;
-    width: 720px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top:50px;
-    left: 70px;
-    
-
-    
-}
-
-#contactTwo{
-    
-    display: grid;
-    width: 720px;
-    float: right;
-    position: relative;
-    top: -350px;
-}
-
-#contactTwo form{
-
-    
-    font-size: 1.2rem;
-    font-weight: normal;
-    border-radius: 5px;
-    margin-left:0 ;
-    
-}
-input[type="submit"]{
-	background-color: var(--navy);
-	border: none;
-	color: var(--liteBlue);
-	font-size: 18px;
-	font-weight: bold;
-	box-shadow: -6px 6px 10px var(--charcoal);
-}
-
-
-label{
-    font-weight: bold;
-
-}
-
-input, label, select{
-    display: block;
-    padding: 4px 0;
-}
-input:invalid{
-    color: var(--red);
-    border: none;
-}
-
-/* footer styles */
-footer{
-    padding-top: 10px;    
-    width: 1440px;
-    display: grid;
-    grid-template-rows: 1fr;
-   background-color: var(--liteBlue);
-    
-}
-
-footer p{
-
-padding-top:20px ;
-text-align: center;
-font-size: 1.3rem;
-
-position: sticky;
-left: 0;
-bottom: 0;
-margin-top: 20px;
-}
-
-
-
-
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}:root{--fonts:"Nata Sans","Roboto","sans serif";--med-blue:#7B9A9F;--liteBlue:#FAFAF7;--charcoal:#363835;--navy:#18232B;--red:#C43E3C}
+body{font-size:16px;font-family:var(--fonts);background-color:var(--med-blue);width:1440px}
+header{background-image:url(images/swiss-valley.jpg);width:1440px;height:560px;margin:auto;display:grid;grid-template-rows:30%70%}
+h1{font-size:4rem;text-align:center;padding-top:10px}
+nav{text-align:center;gap:10px}
+a:hover{color:var(--red)}
+h2{font-size:3rem;text-align:center}
+nav li{font-size:2rem;display:inline-block;text-decoration:none;text-align:center}
+nav a{text-decoration:none;color:black;padding:0 2rem}
+#openingSection{margin:auto;display:grid;grid-template-rows:1fr 1fr}
+#openingSection p{padding:10px;text-align:center}
+h2{font-size:3rem;text-align:center}
+h3{text-align:center;font-size:2rem}
+#section2{display:grid;grid-template-columns:1fr 1fr;width:1440px;margin:auto}
+#groupOne{margin:auto}
+#groupOne p{text-align:center;font-size:1.2rem;margin-bottom:20px}
+#groupOne img{display:flex;align-items:center;margin:auto}
+#groupTwo{margin:auto}
+#groupTwo p{text-align:center;margin-bottom:20px;font-size:1.2rem}
+#groupTwo img{display:flex;align-items:center;margin:auto}
+#contact{display:grid;grid-template-columns:1fr 1fr;max-width:1440px}
+#contactOne{display:grid;grid-template-rows:20%20%40%;margin:0;width:770px}
+#contactOne img{display:flex;margin:auto;justify-content:right;position:relative;left:100px}
+#contactOne p{display:flex;margin:auto;margin-right:0;width:720px;text-align:center;align-items:center;justify-content:center;position:relative;left:50px}
+#contactOne h2{display:flex;margin:auto;margin-right:0;width:720px;text-align:center;align-items:center;justify-content:center;position:relative;top:50px;left:70px}
+#contactTwo{display:grid;width:720px;float:right;position:relative;top:-350px}
+#contactTwo form{font-size:1.2rem;font-weight:normal;border-radius:5px;margin-left:0}
+input[type="submit"]{background-color:var(--navy);border:none;color:var(--liteBlue);font-size:18px;font-weight:bold;box-shadow:-6px 6px 10px var(--charcoal)}
+label{font-weight:bold}
+input,label,select{display:block;padding:4px 0}
+input:invalid{color:var(--red);border:none}
+footer{padding-top:10px;width:1440px;display:grid;grid-template-rows:1fr;background-color:var(--liteBlue)}
+footer p{padding-top:20px;text-align:center;font-size:1.3rem;position:sticky;left:0;bottom:0;margin-top:20px}
