@@ -38,3 +38,4 @@ input,label,select{display:block;padding:4px 0}
 input:invalid{color:var(--red);border:none}
 footer{padding-top:10px;width:1440px;display:grid;grid-template-rows:1fr;background-color:var(--liteBlue)}
 footer p{padding-top:20px;text-align:center;font-size:1.3rem;position:sticky;left:0;bottom:0;margin-top:20px}
+
